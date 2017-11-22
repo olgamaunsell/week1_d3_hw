@@ -131,3 +131,13 @@ users["Erik"][:pets][:dog] = "Fluffy"
 p users["Erik"][:pets]
 
 # 9. Add yourself to the users hash
+p "Ex B:9 "
+users ["Olga"] = {
+      :twitter => "olga",
+      :favourite_numbers => [1, 3,7],
+      :home_town => "Edinburgh",
+      :pets => {"tipsy" => :cat, "spiky" => :hedgehog}
+    }
+
+    puts users["Olga"]
+    puts users["Erik"]
