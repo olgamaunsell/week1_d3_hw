@@ -31,47 +31,23 @@ stops.delete("Livingston")
 p stops
 
 # 6. Delete `"Cumbernauld"` from the array by index
+
+stops.delete_at(2)
+
+p "Ex 6: Deleted Cumbernauld"
+puts stops
+
 # 7. How many stops there are in the array?
-# 8. How many ways can we return `"Falkirk High"` from the array?
+
+p "Ex. 7: Number of stops: "
+p stops.length
+
+
+# 8. How many ways can we return #Falkirk High from the #array?
+
+
 # 9. Reverse the positions of the stops in the array
 # 10. Print out all the stops using a for loop
 
 
 ## B. Given the following data structure:
-
-#
-
-# 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-# 2. Get Erik's hometown
-# 3. Get the array of Erik's favourite numbers
-# 4. Get the type of Avril's pet Colin
-# 5. Get the smallest of Erik's favourite numbers
-# 6. Add the number `7` to Erik's favourite numbers
-# 7. Change Erik's hometown to Edinburgh
-# 8. Add a pet dog to Erik called "Fluffy"
-# 9. Add yourself to the users hash
-
-# C. Given the following data structure:
-
-#
-# united_kingdom = [
-#   {
-#     name: "Scotland",
-#     population: 5295000,
-#     capital: "Edinburgh"
-#   }, {
-#     name: "Wales",
-#     population: 3063000,
-#     capital: "Swansea"
-#   }, {
-#     name: "England",
-#     population: 53010000,
-#     capital: "London"
-#   }
-# ]
-
-
-# 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
-# 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
-# 3. Use a loop to print the names of all the countries in the UK.
-# 4. Use a loop to find the total population of the UK.
