@@ -26,9 +26,10 @@ p "Index position of Linlithgow is: #{stops.index("Linlithgow")}"
 
 # 5. Remove `"Livingston"` from the array using its name
 
-stops.delete("Livingston")
+deleted_item = stops.delete("Livingston")
 
 p stops
+p "deleted item #{deleted_item}"
 
 # 6. Delete `"Cumbernauld"` from the array by index
 
@@ -40,17 +41,27 @@ puts stops
 # 7. How many stops there are in the array?
 
 p "Ex. 7: Number of stops: "
+# all 3 below do the same
 p stops.length
+p stops.count
+p stops.size
 
 # 8. How many ways can we return #Falkirk High from the #array?
+
 p "Ex. 8 return Falkirk High"
 p stops[2]
 p stops[-5]
+p stops.fetch(2)
+p stops.slice(2)
+p stops.at(2)
 
 # 9. Reverse the positions of the stops in the array
 
+# if want reverse for good in array use .reverse!
 p "Ex. 9 reverse position of stops"
 p stops.reverse
+
+# if want reverse for good use .reverse!
 
 # 10. Print out all the stops using a for loop
 p "Ex. 10 print all stops"
@@ -110,9 +121,13 @@ p users["Avril"][:pets]["colin"]
 
 # 5. Get the smallest of Erik's favourite numbers
 p "Ex B:5"
-p users["Erik"][:favourite_numbers].sort.first
+p users["Erik"][:favourite_numbers].sort().first()
+
+#or can use .min
+#p users["Erik"][:favourite_numbers].min()
 
 # 6. Add the number `7` to Erik's favourite numbers
+# it's an array so can use .push
 p "Ex B:6"
 users["Erik"][:favourite_numbers].push(7)
 p users["Erik"][:favourite_numbers]
@@ -126,11 +141,15 @@ p users["Erik"][:hometown]
 
 p "Ex B:8 "
 #Eric_pets = users["Erik"][:pets]
+# take note of key/value
 
-users["Erik"][:pets][:dog] = "Fluffy"
+users["Erik"][:pets]["Fluffy"] = :dog
 p users["Erik"][:pets]
 
 # 9. Add yourself to the users hash
+# can also create a separate hash called new_user which can be # # reused then type
+# users ["Olga"] = new_user
+
 p "Ex B:9 "
 users ["Olga"] = {
       :twitter => "olga",
@@ -161,6 +180,7 @@ users ["Olga"] = {
 
     # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
     p "C. Ex 1"
+    # use the index to access Wales
     united_kingdom[1][:capital] = "Cardiff"
 
     p united_kingdom
