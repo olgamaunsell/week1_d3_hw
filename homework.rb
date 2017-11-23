@@ -160,7 +160,8 @@ users ["Olga"] = {
     ]
 
     # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
-
+    p "C. Ex 1"
+    united_kingdom[1][:capital] = "Cardiff"
 
     p united_kingdom
 
